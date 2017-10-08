@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My assignment</title>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://fb.me/react-15.0.0.js"></script>
+<script src="https://fb.me/react-dom-15.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script type="text/babel">
+
+    var SearchComponent = React.createClass({
+        getInitialState: function(){
+            return {
+                allproducts: this.props.allProducts,
+                filteredproducts: this.props.allProducts
+
+
+            };
+        },
+        onKeyDown: function(e) {
+            if (e.keyCode === 8) {
+                this.setState({filteredproducts:this.state.allproducts});
+            }
+        },
+        handleChange: function(e){
+            var allproducts = this.state.allproducts,
+                searchString = e.target.value.toLowerCase(), filteredproducts ;
+
+
+            if(searchString.length > 0){
+
+                // We are searching. Filter the results.
+
+                 filteredproducts = this.state.filteredproducts.filter(function(product){
+                    return product.name.toLowerCase().match( searchString ) || product.description.toLowerCase().match( searchString );
+                });
+
+
+            }
+            else{
+                filteredproducts = this.state.allproducts
+            }
+            this.setState({filteredproducts:filteredproducts});
+        },
+        render: function() {
+
+            return (
+                <div>
+                    <ul>
+                        <input type="text" value={this.state.searchString} onKeyDown={this.onKeyDown} onChange={this.handleChange} placeholder="Search" />
+
+
+                        { this.state.filteredproducts.map(function(item,index){
+                            return <li key={index}><span>{item.name}</span>-----<span>{item.description}</span></li>
+                        }) }
+
+                    </ul>
+                </div>
+
+            )
+        }
+    });
+
+
+    var deodorant = {
+        name: 'Crystal Body Deodorant Stick, Fragrance Free',
+        price: 719,
+        manufacturer: "CRYSTAL Deodorant",
+        description: "Perfect for men, women and teens, this natural mineral salt deodorant can last over a year with daily suggested use. Moisten the top of the stone before each use.",
+        inStock: true,
+        url: "https://www.amazon.com/CRYSTAL-BODY-DEODORANT-Stick-Unscented/dp/B000L978FU"
+    };
+
+
+    var products = [seventhgeneration, wholefoods, ecome, toms, deodorant];
+    ReactDOM.render(
+            <SearchComponent allProducts={products}/>,document.getElementById('app')
+    );
+</script>
+</body>
+</html>

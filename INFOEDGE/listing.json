@@ -1,0 +1,239 @@
+{
+  "jobs":{
+    "0":{
+      "Job":{
+        "Designation":"SAP Basis-Java\/Portal Administrator",
+        "Location":"Doha - Qatar",
+        "Experience":{
+          "Min":"6",
+          "Max":"12"
+        },
+        "Company":{
+          "Name":"Brunel India Pvt Ltd",
+          "Id":"48761"
+        },
+        "JobId":"180717000052",
+        "ApplyDate":"2017-08-31 03:56:07",
+        "rank":"Bottom 30%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-07-31",
+          "resTotalExp":"3.",
+          "expMatch":"0",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"1",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Application Submitted",
+          "date":"31 Aug"
+        },
+        "score":"1"
+      }
+    },
+    "1":{
+      "Job":{
+        "Designation":"HEALTH, SAFETY & ENVIRONMENT OFFICER",
+        "Location":"Bahrain - Bahrain",
+        "Experience":{
+          "Min":"5",
+          "Max":"9"
+        },
+        "Company":{
+          "Name":"Kooheji Contractors co.",
+          "Id":"55428"
+        },
+        "JobId":"210817000005",
+        "ApplyDate":"2017-08-23 00:58:29",
+        "rank":"Bottom 30%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-07-31",
+          "resTotalExp":"3.",
+          "expMatch":"1",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"1",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Application Downloaded",
+          "date":"26 Aug"
+        },
+        "score":"1"
+      }
+    },
+    "2":{
+      "Job":{
+        "Designation":"Sales Executive- Transportation",
+        "Location":"Abu Dhabi - United Arab Emirates",
+        "Experience":{
+          "Min":"2",
+          "Max":"8"
+        },
+        "Company":{
+          "Name":"Emirates Logistics LLC",
+          "Id":"33632"
+        },
+        "JobId":"110617000011",
+        "ApplyDate":"2017-07-11 02:55:49",
+        "rank":"Bottom 30%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-07-11",
+          "resTotalExp":"3.",
+          "expMatch":"1",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"1",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Application Submitted",
+          "date":"11 Jul"
+        },
+        "score":"1"
+      }
+    },
+    "3":{
+      "Job":{
+        "Designation":"Hospitality Plumber",
+        "Location":"Ahmedabad - India",
+        "Experience":{
+          "Min":"0",
+          "Max":"0"
+        },
+        "Company":{
+          "Name":"naukrigulfqa@gmail.com",
+          "Id":"89465"
+        },
+        "JobId":"260517000003",
+        "ApplyDate":"2017-07-11 02:44:27",
+        "rank":"Bottom 50%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-07-11",
+          "resTotalExp":"3.",
+          "expMatch":"0",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"0",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Application Submitted",
+          "date":"11 Jul"
+        },
+        "score":"1"
+      }
+    },
+    "4":{
+      "Job":{
+        "Designation":"Senior English Teacher",
+        "Location":"Abu Dhabi - United Arab Emirates",
+        "Experience":{
+          "Min":"1",
+          "Max":"1"
+        },
+        "Company":{
+          "Name":"naukrigulfqa@gmail.com",
+          "Id":"89465"
+        },
+        "JobId":"260217600018",
+        "ApplyDate":"2017-07-11 02:40:28",
+        "rank":"Bottom 30%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-05-12",
+          "resTotalExp":"3.",
+          "expMatch":"0",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"0",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Application Submitted",
+          "date":"11 Jul"
+        },
+        "score":"1"
+      }
+    },
+    "5":{
+      "Job":{
+        "Designation":"Neurologist - MOH license!",
+        "Location":"Sharjah - United Arab Emirates",
+        "Experience":{
+          "Min":"3",
+          "Max":"6"
+        },
+        "Company":{
+          "Name":"Zulekha Hospital",
+          "Id":"2467"
+        },
+        "JobId":"210617000016",
+        "ApplyDate":"2017-07-05 04:17:06",
+        "rank":"Bottom 30%",
+        "flags":{
+          "resCtc":"15",
+          "resPassportExpiryDate":"33",
+          "resModDate":"2017-05-12",
+          "resTotalExp":"3.",
+          "expMatch":"1",
+          "locationMatch":"0",
+          "genderMatch":"1",
+          "keyskillMatch":"1",
+          "ctcMatch":"0",
+          "fareaMatch":"0",
+          "indMatch":"0",
+          "educationMatch":"0",
+          "nationalityMatch":"1",
+          "sendToInbox":"0"
+        },
+        "highlight":false,
+        "status":{
+          "label":"Marked Not Suitable",
+          "date":"10 Jul"
+        },
+        "score":"1"
+      }
+    }
+  },
+  "showFeedBack":"1"
+}
