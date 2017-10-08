@@ -1,0 +1,92 @@
+$minheight: 22px;
+.customselect{
+    width: 100%;
+    .select {
+        width: 100%;
+        position: relative;
+        border-bottom: solid 2px #ebebeb;
+        min-height: $minheight;
+        cursor: pointer;
+        &_error
+        {
+            border-bottom: solid 2px #fd5c5c;
+        }
+        &_valid
+        {
+            border-bottom: solid 2px #00c8ff;
+        }
+    }
+    &__value{
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 20px;
+        overflow: hidden;
+        text-align: left;
+        background: #a2a0a0;
+        height: 30px;
+        padding: 2px 10px;
+        font-size: 17px;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 9px;
+            border-top: 8px solid #e0caca;
+            top: 12px;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            width: 0px;
+            border-bottom: 0px;
+            height: 0px;
+        }
+    }
+    input{
+        outline: none;
+        border: 0;
+    }
+    .search__input
+    {
+        width: 100%;
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        outline: none;
+        height: 30px;
+    }
+    ul {
+        min-width: 80%;
+        position: absolute;
+        top: 34px;
+        right: 0px;
+        left: 0px;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+        background-color: #ffffff;
+        border: solid 0.8px #ebebeb;
+        max-height: 228px;
+        overflow-y: auto;
+    }
+
+
+
+    ul li.option {
+        z-index: 1;
+        padding: 13px 25px;
+        list-style: none;
+        border-bottom: 1px solid #ebebeb;
+        cursor: pointer;
+        text-align: left;
+        &--active,&:hover{
+            background: #f5f8f9 !important;
+        }
+    }
+
+    .shown {
+        display: block;
+    }
+    .hidden{
+        display: none
+    }
+}

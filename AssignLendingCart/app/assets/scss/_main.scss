@@ -1,0 +1,132 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  padding: 2%;
+}
+h2{
+  color: #4892ea;
+  padding: 6px 0;
+}
+p.heading{
+  font-size: 14px;
+  font-weight: bold;
+}
+.center{
+  text-align: center;
+}
+.hide{
+  display:none
+}
+.modalparent{
+  position: relative;
+}
+.blackbackground{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: .7;
+  z-index: 1;
+}
+.employeeDialog {
+  box-shadow: 0px 0px 10px #888888;
+  background: #e6eaef;
+  width: 30%;
+  /* margin: 0px auto; */
+  z-index: 1;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.employeeDialog h1{
+  color: #4a93f9;
+}
+
+.employeeDialog h4{
+  margin-bottom: 5px;
+}
+
+.employeeDialog .dialogFooter{
+  margin-top: 20px;
+  text-align: right;
+}
+
+.button{
+  font-size: 15px;
+  width: 100px;
+  color: white;
+  border: none;
+  margin: 5px 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.cancelButton{
+  background: #d5dae0;
+  color: black;
+  text-align: center;
+}
+
+.submitButton{
+  background: #4892ea;
+  color: white;
+  text-align: center;
+}
+
+.employeeDialog .closeModalCross{
+  float: right;
+  position: relative;
+  right: 5px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.employeeDialog .dropdownInput {
+  background-color: #f9f9f9;
+  color: #666;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.employeeDialog .dropdown {
+  position: relative;
+  width: 80%;
+  margin: 0px 5px;
+}
+
+.employeeDialog .dropdown-content {
+  display: none;
+  max-height: 100px;
+  width: 100%;
+  z-index: 9;
+  opacity: 1;
+  overflow-y: auto;
+  position: absolute;
+  padding: 2px 0px;
+  background-color: white;
+  font-size: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.employeeDialog .dropdown-content a {
+  color: #666;
+  padding: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.employeeDialog .dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
