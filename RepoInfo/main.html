@@ -1,0 +1,27 @@
+
+<div class="container" ng-controller="mainCtrl">
+    <div ng-if="loading" class="loader"><div class="loadericon"></div></div>
+  <section class="searchpanel"> <h2> Search</h2>
+      <input ng-model-options="{debounce: 500}" placeholder="Search User" type="text" ng-change="getUser(username)" ng-model="username"></p>
+    <div ng-if="!userRepo.length &&  users">
+        <ul>
+            <li ng-click="getUserDetail(user.login)" ng-repeat="user in users track by $index" >{{user.login}}</li>
+        </ul>
+    </div>
+  </section>
+    <section class="userrepo" ng-if="userRepo.length">
+        <ul class="repoheader"><li>size</li><li>language</li><li>fork-count</li><li>watchers_count</li><li>fork</li></ul>
+        <ul class="repodata" ng-repeat="repo in userRepo track by $index">
+            <li>{{repo.size}}</li>
+            <li>{{repo.language}}</li>
+            <li>{{repo.forks_count}}</li>
+            <li>{{repo.watchers_count}}</li>
+            <li>{{!repo.fork? "false": "true" }}</li>
+        </ul>
+        <div class="paging">
+            <button class="prevbtn" ng-click="callPaging('prev')" ng-disabled="currentPage==1">prev</button>
+            <button ng-click="callPaging('next')" class="nexttn" ng-disabled="currentPage*10 >= userRepoDataCount">next</button>
+        </div>
+    </section>
+
+</div>

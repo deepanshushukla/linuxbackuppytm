@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My assignment</title>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://fb.me/react-15.0.0.js"></script>
+<script src="https://fb.me/react-dom-15.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script type="text/babel">
+
+    var SearchComponent = React.createClass({
+        getInitialState: function(){
+            return {
+                allproducts: this.props.allProducts,
+                filteredproducts: this.props.allProducts
+
+
+            };
+        },
+        onKeyDown: function(e) {
+            if (e.keyCode === 8) {
+                this.setState({filteredproducts:this.state.allproducts});
+            }
+        },
+        handleChange: function(e){
+            var allproducts = this.state.allproducts,
+                searchString = e.target.value.toLowerCase(), filteredproducts ;
+
+
+            if(searchString.length > 0){
+
+                // We are searching. Filter the results.
+
+                 filteredproducts = this.state.filteredproducts.filter(function(product){
+                    return product.name.toLowerCase().match( searchString ) || product.description.toLowerCase().match( searchString );
+                });
+
+
+            }
+            else{
+                filteredproducts = this.state.allproducts
+            }
+            this.setState({filteredproducts:filteredproducts});
+        },
+        render: function() {
+
+            return (
+                <div>
+                    <ul>
+                        <input type="text" value={this.state.searchString} onKeyDown={this.onKeyDown} onChange={this.handleChange} placeholder="Search" />
+
+
+                        { this.state.filteredproducts.map(function(item,index){
+                            return <li key={index}><span>{item.name}</span>-----<span>{item.description}</span></li>
+                        }) }
+
+                    </ul>
+                </div>
+
+            )
+        }
+    });
+    var seventhgeneration = {
+        name: 'Seventh Generation Organic All-Purpose Natural Cleaner',
+        price: 299,
+        manufacturer: "Seventh Generation",
+        description: "A favorite go-to-cleaner for cutting grease, grime and dirt everywhere in your home. See for yourself why fans swear by it.",
+        inStock: true,
+        url: "https://www.seventhgeneration.com/all-purpose-cleaner?v=69"
+    };
+
+    var wholefoods = {
+        name: 'Whole Foods Market All-Purpose Concentrated Cleaner',
+        price: 399,
+        manufacturer: "Whole Foods",
+        description: "With pine essential oil, this is the hardest working partner in your cleaning closet for floors, sinks, counters, bathtubs and toilets. Rated yellow on the Eco-Scale.",
+        inStock: false,
+        url: "http://www.wholefoodsmarket.com/blog/spring-cleaning-greener-cleaners"
+    };
+
+    var ecome = {
+        name: 'Eco-Me Natural All Purpose Cleaner',
+        price: 914,
+        manufacturer: "Eco-Me",
+        description: "Safely clean dirt, grease, or other food-grade stains without harsh chemicals or fumes making this cleaner great for homes with children and pets",
+        inStock: true,
+        url: "https://www.amazon.com/Eco-Me-All-Purpose-Spray-Cleaner/dp/B002K627XA"
+    };
+
+    var toms = {
+        name: 'Tom’s of Maine Natural Toothpaste',
+        price: 429,
+        manufacturer: "Tom’s of Maine",
+        description: "Authentic natural ingredients and Whitens with naturally sourced silicas",
+        inStock: true,
+        url: "https://www.amazon.com/Toms-Maine-Antiplaque-Fluoride-Free-Toothpaste/dp/B00JUJ1E0W"
+    };
+
+    var deodorant = {
+        name: 'Crystal Body Deodorant Stick, Fragrance Free',
+        price: 719,
+        manufacturer: "CRYSTAL Deodorant",
+        description: "Perfect for men, women and teens, this natural mineral salt deodorant can last over a year with daily suggested use. Moisten the top of the stone before each use.",
+        inStock: true,
+        url: "https://www.amazon.com/CRYSTAL-BODY-DEODORANT-Stick-Unscented/dp/B000L978FU"
+    };
+
+
+    var products = [seventhgeneration, wholefoods, ecome, toms, deodorant];
+    ReactDOM.render(
+            <SearchComponent allProducts={products}/>,document.getElementById('app')
+    );
+</script>
+</body>
+</html>
